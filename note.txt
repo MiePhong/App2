@@ -1,0 +1,59 @@
+1/Tài nguyên nằm trong src 
+
+2/File main : server.js 
+
+3/Tổ chức project theo mô hình MVC 
+
+4/Folder public : chứa tất cả nội dung static show cho người dùng
+vd : images , css , .....
+
+5/Folder config : cấu hình view engine (ejs) , public , view
+database . 
+
+6/Folder router : chứa toàn bộ phần đều hướng của website
+
+7/ .gitignore : cancel file or folder đưa lên github 
+
+8/ .env : chứa port là : 8080 của web server . 
+ngoài ra còn chứa tt user , pass cấu hình database
+
+9/ package.json : chứa toàn bộ thư viện , frameword của nodejs
+
+10/ package-lock.json && node_modules : tự động tạo trong quá trình
+cài thư viện nodejs (*ko được chỉnh sửa  hay xóa) 
+
+11/ .babelre :trình biên dịch mã javascript , bắt buộc phải có
+khi sử dụng view engine *EJS (cụ thể là tập tin .ejs)
+
+12/ project sử dụng view engine là ejs . 
+
+13/Folder controller : mỗi controller đại diện cho 1 router , 
+example : khi *client truy cập vào 1 địa chỉ router nào đó
+controller xử lí và render dữ liệu trang đó trả về cho client
+,thông qua folder Views . 
+
+14/folder views :gồm tất cả nội dung html sẽ được render 
+
+15/ folder Module : Phần tương tác với database (truy vấn ,
+update , insert , delete ...bla..bla) 
+
+16/Theo mô hình MVC thì : controller quản lí cả *module và views
+
+17/Folder public :chứa css , img ..
+sử dụng express Static , tức là mọi nội dung trong
+đây, *client đều có thể xem , copy nội dung web ... ,thông qua lệnh
+inspect .
+
+get : lấy dữ liệu từ server --> client 
+post : create , read , update , delete dữ liệu từ client lên server . 
+
+****
+Project còn thiếu : connect data ,
+insert, delete,update với login , sign up . và nhiều thứ khác chưa biết
+
+                        :))))
+                        goodLuck
+
+
+
+

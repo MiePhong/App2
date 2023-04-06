@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1, user-scalable=yes">
+    <title>Khởi nguồn</title>
+    <link rel="shortcut icon" href="./assets/img/icon_webiste-01.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/news.css">
+    <style>
+        h1 {
+            margin-top: 50px;
+            padding-left: 150px;
+            font-size: 45px;
+            color: #53382c;
+        }
+
+        h2 {
+
+            padding-left: 150px;
+        }
+
+        h3 {
+            color: #53382c;
+            text-align: center;
+        }
+
+        p {
+            padding-right: 50px;
+            padding-left: 150px;
+        }
+    </style>
+    <style>
+        .content {
+            width: 100%;
+            height: auto;
+            background-color: #333;
+        }
+
+        .content .top {
+            width: 100%;
+            height: 500px;
+            background-image: url('./assets/img/ABOUT-ORIGIN111111.png');
+            background-size: cover;
+
+        }
+
+        .content .bottom {
+            width: 100%;
+            height: 700px;
+            background-color: #fff;
+        }
+
+        .content .bottom .left {
+            width: 70%;
+            background-color: #fff;
+            float: left;
+
+        }
+
+        .content .bottom .right {
+            width: 30%;
+            background-color: #fff;
+            float: left;
+        }
+
+        .content .bottom .right .one {
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--container-->
+    <div id="container">
+        <!--header-->
+        <div class="header"></div>
+        <!--end header-->
+
+        <!--CONTENT-->
+        <div class="content">
+            <!--CONTENT .TOP-->
+            <div class="top">
+
+            </div>
+            <!--END CONTENT .TOP-->
+            <!--CONTENT .BOTTOM-->
+            <div class="bottom">
+                <!--CONTENT .BOTTOM .LEFT-->
+                <div class="left">
+                    <h1>KHỞI NGUỒN</h1>
+                    <h2>Thương hiệu bắt nguồn từ cà phê Việt Nam</h2>
+                    <p>Từ tình yêu với Việt Nam và niềm đam mê cà phê, năm 1999, thương hiệu Highlands Coffee® ra đời
+                        với khát vọng nâng tầm di sản cà phê lâu đời của Việt Nam và lan rộng tinh thần tự hào, kết nối
+                        hài hoà giữa truyền thống với hiện đại.
+                    </p>
+                    <p>Bắt đầu với sản phẩm cà phê đóng gói tại Hà Nội vào năm 2000, chúng tôi đã nhanh chóng phát triển
+                        và mở rộng thành thương hiệu quán cà phê nổi tiếng và không ngừng mở rộng hoạt động trong và
+                        ngoài nước từ năm 2002.
+                    </p>
+                    <p>Qua một chặng đường dài, chúng tôi đã không ngừng mang đến những sản phẩm cà phê thơm ngon, sánh
+                        đượm trong không gian thoải mái và lịch sự. Những ly cà phê của chúng tôi không chỉ đơn thuần là
+                        thức uống quen thuộc mà còn mang trên mình một sứ mệnh văn hóa phản ánh một phần nếp sống hiện
+                        đại của người Việt Nam.
+                    </p>
+                    <p>Đến nay, Highlands Coffee® vẫn duy trì khâu phân loại cà phê bằng tay để chọn ra từng hạt cà phê
+                        chất lượng nhất, rang mới mỗi ngày và phục vụ quý khách với nụ cười rạng rỡ trên môi. Bí quyết
+                        thành công của chúng tôi là đây: không gian quán tuyệt vời, sản phẩm tuyệt hảo và dịch vụ chu
+                        đáo với mức giá phù hợp.
+                    </p>
+                </div>
+                <!--END CONTENT .BOTTOM .LEFT-->
+                <!--CONTENT .BOTTOM .RIGHT-->
+                <div class="right">
+                    <!--CONTENT .BOTTOM .RIGHT .ONE-->
+                    <div class="one">
+                        <img src="./assets/img/About_Customer_service_2.jpg">
+                        <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+                    </div>
+                    <!--END CONTENT .BOTTOM .RIGHT .ONE-->
+                    <!--CONTENT .BOTTOM .RIGHT .TWO-->
+                    <div class="two">
+                        <br> <img src="./assets/img/ABOUT-CAREER3.jpg">
+                        <h3>NGHỀ NGHIỆP</h3>
+                    </div>
+                    <!--END CONTENT .BOTTOM .RIGHT .TWO-->
+
+                </div>
+                <!--END CONTENT .BOTTOM .RIGHT-->
+
+
+            </div>
+            <!--END CONTENT .BOTTOM-->
+
+        </div>
+        <!--END CONTENT-->
+        <!--end footer-->
+        <a href="#" id="go_top" style><img
+                src="http://2.bp.blogspot.com/-E-qglxRwEZQ/T4ExPj17OSI/AAAAAAAAA_I/B9GGkAR-MYk/s1600/top-namkna-blogspot-com.gif"></a>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function () {
+        $('.header').load('./assets/components/header.html')
+        $('.footer').load('./assets/components/footer.html')
+    })
+</script>
+
+<script>
+    var showGototop = 150;
+
+    $(Window).scroll(function () {
+        if ($(this).scrollTop() >= showGototop) {
+            $('#go_top').fadeIn();
+        }
+        else {
+            $('#go_top').fadeOut();
+        }
+    });
+
+    $('#go_top').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 1000);
+    });
+</script>
+
+</html>
