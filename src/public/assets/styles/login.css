@@ -88,3 +88,19 @@ body{
 .signup label:hover{
   text-decoration: underline;
 }
+
+.inline_a{
+  display: inline; /* hoặc display: inline-block; */
+}
+
+.inline_p{
+  float: right;
+  color: #009579;
+  cursor: pointer;
+}
+
+/* .form a:hover{
+  text-decoration: underline;
+} */
+
+

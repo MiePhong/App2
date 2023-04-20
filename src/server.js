@@ -1,11 +1,10 @@
-// import http from 'express'
-const http = require("express");
+const express = require("express");
 require("dotenv").config();
 import configViewEngine from "./config/ViewEngine";
 import initWebRouter from "./router/web";
 
-const app = http();
-
+const app = express();
+//app.use(express.json());
 const port = process.env.PORT || 8080; //backup port when undefined
 
 //set up view engine

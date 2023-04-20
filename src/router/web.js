@@ -10,6 +10,13 @@ import bookingController from "../controller/bookingController";
 import loginController from "../controller/loginController";
 import signUpController from "../controller/signUpController";
 
+//import middleware
+import urlencodedParser from "../middleware/body_parser";
+//import controller post_login
+import post_login from "../controller/post_login";
+//import controller post_register
+import post_register from "../controller/post_register";
+
 let router = express.Router();
 
 const initWebRouter = (app) => {
@@ -22,6 +29,9 @@ const initWebRouter = (app) => {
   router.get("/booking", bookingController.getBookingPage);
   router.get("/login", loginController.getLoginPage);
   router.get("/signUp", signUpController.getSignUpPage);
+
+  router.post("/login", urlencodedParser, post_login.method_post_login);
+  router.post("/signUp", urlencodedParser, post_register.method_post_register);
 
   return app.use("/", router);
 };
