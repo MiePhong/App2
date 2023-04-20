@@ -16,6 +16,8 @@ import urlencodedParser from "../middleware/body_parser";
 import post_login from "../controller/post_login";
 //import controller post_register
 import post_register from "../controller/post_register";
+//import controller post_sendMail
+import post_SendMail from "../controller/post_SendMail";
 
 let router = express.Router();
 
@@ -32,6 +34,8 @@ const initWebRouter = (app) => {
 
   router.post("/login", urlencodedParser, post_login.method_post_login);
   router.post("/signUp", urlencodedParser, post_register.method_post_register);
+
+  router.post("/", urlencodedParser, post_SendMail.send_mail);
 
   return app.use("/", router);
 };
