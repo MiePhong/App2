@@ -14,7 +14,7 @@ configViewEngine(app);
 initWebRouter(app);
 
 app.listen(port, () => {
-  console.log("Successfully ! , Trang chủ sẽ mở trong giây lát ......");
+  console.log(`Successfully ! ,Server started on localhost ${port} ......`);
 });
 
 // connection();
